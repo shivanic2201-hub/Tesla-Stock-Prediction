@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import joblib
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 model = load_model("best_lstm_model.keras")
 scaler = joblib.load("scaler.pkl")
